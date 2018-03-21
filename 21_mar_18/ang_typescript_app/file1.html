@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="abc.js"></script>
+</head>
+<body>
+<div ng-controller="GreetingController">
+    <div>
+        Name: <input type="text" ng-model="firstName" />
+        Surname: <input type="text" ng-model="lastName" />
+    </div>
+    <br/>
+    <div>
+        <button ng-click="greetMe()">Greet me</button>
+    </div>
+    <div>
+        <h1>{{fullName}}</h1>
+    </div>
+</div>
+</body>
+</html>
